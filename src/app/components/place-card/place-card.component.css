@@ -1,0 +1,67 @@
+.placeCard{
+    margin:10px;
+
+    position: relative;
+    height: 154px;
+    width: 370px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E9F1DF;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.placeCard-body,.placeCard-footer{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.placeCard-body{
+    height: 100px;
+    width: 100%;
+
+}
+.placeCard-footer{
+    height: 40px;
+    width: 100%;
+}
+
+.place-image{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.place-text{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    height: 60px;
+    width: 190px;
+}
+.place-text p{
+    margin: 0;
+}
+
+.place-name{
+    position: absolute;
+    left: 20px;   
+    max-width: 90px;
+}
+.place-author{
+    position: absolute;
+    right:20px;
+}

@@ -1,0 +1,55 @@
+.footer{
+    border-top: 1px solid black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+.footer-body{
+    display: flex;
+    
+}
+
+.social-card{
+    margin: 0 15px;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 32px;
+}
+
+.fa-twitter{
+    color: blueviolet;
+}
+
+.fa-instagram{
+   color: transparent;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+   background-clip: text;
+   -webkit-background-clip: text;
+}
+
+.fa-medium{
+    color: 	#000000;
+}
+
+.fa-github{
+    color:#333;
+}
+
+.fa-safari{
+    color: #006CFF;
+}
+
+.fa-envelope{
+    color: #0078D7;
+}

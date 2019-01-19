@@ -1,0 +1,45 @@
+<div class="homeImage">
+
+  <div class="overlay">
+    <h1 class="homeTitle">NerdeNeYesek??</h1>
+    <div class="homeLogo">
+    </div>
+    <p class="homeText">Çevrendeki Tatları Keşfet</p>
+    <!-- <div class="homeSearchPanel">
+      <div class="locationArrowIcon btn">
+        <div class="arrowIcon"></div>
+      </div>
+      <div class="searchBox"><input class="searchBar" type="text" placeholder="Yemekleri ve restoranları ara" /></div>
+      <div class="searchButton btn">Ara</div>
+    </div> -->
+  </div>
+</div>
+<div class="container">
+  <div class="suggestedPlace">
+    <div class="suggestedPlace-header">
+      <h3>Önerilen Mekanlar</h3>
+      <p>En popüler restoran, cafe, pub ve barlardan oluşan, özenle hazırlanmış derlemeleri keşfet.</p>
+    </div>
+    <div class="suggestedPlace-body">
+      <div (click)="slideToLeft()" class="left-arrow"></div>
+      <div class="content" #restaurantContent>
+          <place-card   *ngFor="let item of suggestedRestaurants" place-id='{{item.placeId}}' summary='{{item.summary}}' rating='{{item.rating}}' author='{{item.author}}' cover-photo='{{item.coverphoto}}' image-src='{{item.image}}' restaurant-name='{{item.name}}'></place-card>
+      </div>
+      <div (click)="slideToRight()" class="right-arrow"></div>
+    </div>
+
+  </div>
+  <div class="suggestedFlavor">
+    <div class="suggestedFlavor-header">
+      <h3>Tatlar</h3>
+      <p>Tadı damağınızdan eksilmeyecek lezzetler.</p>
+    </div>
+    <div class="suggestedFlavor-body">
+      <div class="content">
+        <flavor-card *ngFor="let item of suggeestedFlavors"  flavor-id='{{item.flavorId}}' flavor-name='{{item.flavorName}}' flavor-img='{{item.flavorImage}}'></flavor-card>
+      </div>
+    </div>
+  </div>
+
+</div>
+<app-footer></app-footer>

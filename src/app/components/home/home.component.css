@@ -1,0 +1,274 @@
+.homeImage{
+    background-image:url('../../../assets/bgimage.jpg');
+    width: 100%;
+    height: var(--image-width);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeLogo{
+    height: 80px;
+    width: 80px;
+    position: static;
+    background-color: #fff;
+    background-image: url('../../../assets/logo.png');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.homeTitle,.homeText{
+    color: white;
+}
+.homeSearchPanel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+
+}
+.overlay{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: var(--image-width);
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.locationArrowIcon{
+    height: 32px;
+    width: 64px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowIcon{
+    background-image: url('../../../assets/location-arrow.png');
+    height: 23px;
+    width: 23px;
+    color: #33373D;
+    background-size: cover;
+    background-position: center center;
+}
+.searchButton{
+    border: 1px solid wheat;
+}
+.searchBar{
+    padding: 0;
+    border: 1px solid wheat;
+    height: 32px;
+    width: 240px;
+    background-color: #fff;
+    color: #33373D;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+}
+.searchBar:focus{
+    border-radius: 15px;
+    border-color: none;
+    text-align: center;
+}
+.searchBar::placeholder{
+    color: darkgray;
+    text-align: center;
+}
+
+
+.suggestedFlavor{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.suggestedPlace{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+.suggestedPlace-header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.suggestedFlavor-header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.suggestedFlavor-header p{
+    margin-top: 0;
+}
+
+.suggestedFlavor-header h3 {
+    margin-bottom: 5px;
+}
+
+
+.suggestedFlavor-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.suggestedPlace-header p {
+    margin-top: 0;
+}
+
+.suggestedPlace-header h3 {
+    margin-bottom: 5px;
+}
+
+.suggestedPlace-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.suggestedPlace .content{
+    overflow-x: scroll;
+
+}
+
+.suggestedPlace .content::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.placeCard{
+    position: relative;
+    height: 154px;
+    width: 370px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: pink;
+}
+
+.placeCard-body,.placeCard-footer{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.placeCard-body{
+    height: 100px;
+    width: 100%;
+
+}
+.placeCard-footer{
+    height: 40px;
+    width: 100%;
+}
+
+.place-image{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: grey;
+}
+
+.place-text{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    height: 60px;
+    width: 190px;
+}
+.place-text p{
+    margin: 0;
+}
+
+.place-name{
+    position: absolute;
+    left: 20px;   
+}
+.place-author{
+    position: absolute;
+    right:20px;
+}
+
+.flavorCard{
+    position: relative;
+    height: 115px;
+    width: 145px;
+    background-color: grey;
+    text-align: center;
+    line-height: 115px;
+    vertical-align: middle;
+}
+
+
+.left-arrow,.right-arrow{
+    background-image: url('../../../assets/left-arrowhead-in-a-circle.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.left-arrow{
+    margin-right: 5px;   
+}
+
+.right-arrow{
+    background-image: url('../../../assets/right-arrowhead-in-a-circle.png');    
+    margin-left: 5px;
+}
+
+.btn{
+    height: 32px;
+    width: 52px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #33373D;
+    line-height: 32px;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.left-arrow,.right-arrow{
+    cursor: pointer;
+}

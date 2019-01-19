@@ -1,0 +1,28 @@
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/nova-light/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+}
+:root{
+    --image-width:370px;
+    --continer-height:calc(100% - 230px);
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 85px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-inner{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

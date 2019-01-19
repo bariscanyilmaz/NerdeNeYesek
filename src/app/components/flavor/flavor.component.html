@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="suggestedPlace">
+    
+    
+    <ng-container *ngIf="restaurants?.length; else elseTemplate">
+        <div class="suggestedPlace-header">
+            <h3>{{flavorName}} Kategorisinde Restoranları Görüntülüyorsunuz.</h3>
+          </div>
+          <div class="suggestedPlace-body">
+            <div class="content">
+              <place-card *ngFor="let item of restaurants" place-id='{{item.placeId}}' summary='{{item.summary}}' rating='{{item.rating}}'
+                author='{{item.author}}' image-src='{{item.image}}' cover-photo='{{item.coverphoto}}' restaurant-name='{{item.name}}'></place-card>
+            </div>
+          </div>
+          
+    </ng-container>
+    <ng-template #elseTemplate>
+      <h3>{{flavorName}} Kategorisinde Restoran bulunmamaktadır.</h3>
+    </ng-template>
+    
+  </div>
+</div>

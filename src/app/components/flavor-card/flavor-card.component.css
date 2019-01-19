@@ -1,0 +1,28 @@
+.flavorCard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px;
+    width: 145px;
+    text-align: center;
+    color: white;
+    line-height: 115px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    
+
+    border-radius: 10px;
+
+}
+
+.flavor-card-overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 115px;
+    border-radius: 10px;
+}

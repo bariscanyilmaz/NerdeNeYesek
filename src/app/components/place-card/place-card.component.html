@@ -1,0 +1,13 @@
+<div class="placeCard" (click)="redirectTo()">
+  <div class="placeCard-body">
+    <div class="place-image" [ngStyle]="{'background-image': 'url(' + coverphoto + ')'}"></div>
+    <div class="place-text">
+      <p>{{summary}}</p>
+    </div>
+  </div>
+  <div class="placeCard-footer">
+    <div class="place-name">{{name}}</div>
+    <div class="place-rating"><p-rating [ngModel]="rating" readonly="true" stars="5" [cancel]="false"></p-rating></div>
+    <div class="place-author">{{author}}</div>
+  </div>
+</div>
